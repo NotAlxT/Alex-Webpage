@@ -1,0 +1,150 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.elem1 {
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+    transform: rotate(30deg);
+    height: 90%;
+    z-index: 0;
+}
+
+/* left side */
+
+.homeLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding-left: 100px;
+    z-index: 2;
+}
+
+.smallLine {
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    z-index: 2;
+}
+
+.homeLeft h4 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 2;
+}
+
+.nameImgContainer {
+    margin-top: 1rem;
+    width: 20rem;
+    height: auto;
+    background: linear-gradient(to right, rgba(250, 235, 215, 1), rgba(255,255,255,.1));
+    border-radius: 25px;
+    z-index: 2;
+}
+
+.nameImg {
+    width: 450px;
+    z-index: 2;
+    /* box-shadow: 0 0  10px rgb(82, 82, 82);
+    border-radius: 20px; */
+}
+
+.homeLeft h5{
+    position: relative;
+    font-size: 22px;
+    letter-spacing: 9px;
+    width: 450px;
+    bottom: 40px;
+    font-weight: 800;
+    color: #727272;
+    text-transform: capitalize;
+}
+
+.homeLeft h5 span{
+    color: rgba(82, 184, 218, 1);
+}
+
+/* right side */
+
+.homeRight{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    
+}
+
+.selfContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selfContainer img{
+    width: 70%;
+    height: 70%;
+    transform: scale(.8);
+    /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.2), white); */
+}
+
+/* contact */
+
+#contact {
+    margin-top:  200px;
+    z-index: 2;
+}
+
+#contact h3{
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 12px;
+    opacity: .8;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+#contact h6{
+    margin-top:  5px;
+    font-weight: 800;
+    font-size: 12px;
+    
+}
+
+#contact h6 span{
+    color:  rgba(82, 184, 218, 1);
+    font-weight: 800;
+    
+}
+
+#contact div{
+    display: flex;
+    padding-left: 1rem;
+    gap: .5rem;
+}
+
+#contact div h6{
+    padding-top: .5rem;
+    border-radius: 20%;
+    color: rgb(255, 255, 255);
+    opacity: .8;
+    transition: ease-in-out 1s;
+}
+
+#contact div h6:hover{
+    color: black;
+    opacity: 1;
+    background-color: rgba(250, 235, 215, .7);
+    transition: ease-in-out .5s;
+    transform: scale(1.1);
+    box-shadow: 0 0  10px rgb(0, 0, 0)
+}
+
