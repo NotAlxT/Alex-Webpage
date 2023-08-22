@@ -1,4 +1,4 @@
-import { Router, Route, Routes } from 'react-router'
+// import { Router, Route, Routes } from 'react-router'
 
 import Nav from './components/nav/nav';
 import Home from './components/home/home';

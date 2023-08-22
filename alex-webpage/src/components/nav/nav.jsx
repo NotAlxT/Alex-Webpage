@@ -10,9 +10,9 @@ export default function Nav() {
               {/* <img src={Logo} alt="Logo" />   */}
               <Loader />
               <div className='navLinks'>
-                <a href='#'><Icon icon="solar:home-2-broken" width="30" height="30" /></a>
-                <a href='#'><Icon icon="fluent-mdl2:contact" width="30" height="30" /></a>
-                <a href='#'><Icon icon="solar:folder-with-files-broken" width="30" height="30" /></a>
+                <a href='/'><Icon icon="solar:home-2-broken" width="30" height="30" /></a>
+                <a href='/'><Icon icon="fluent-mdl2:contact" width="30" height="30" /></a>
+                <a href='/'><Icon icon="solar:folder-with-files-broken" width="30" height="30" /></a>
               </div>
         </div>
     )
