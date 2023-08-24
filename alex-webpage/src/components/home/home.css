@@ -31,6 +31,30 @@
     height: 3px;
     background-color: black;
     z-index: 2;
+    animation: anim3 1s cubic-bezier(0.19, 1, 0.22, 1) 8s both;
+}
+@keyframes anim3{
+    from{
+        transform: translateX(-100rem);
+    }
+}
+
+@keyframes anim4{
+    from{
+        transform: translateY(-100rem);
+    }
+}
+
+@keyframes anim5{
+    from{
+        transform: translateX(100rem);
+    }
+}
+
+@keyframes anim6{
+    from{
+        transform: translateY(100rem);
+    }
 }
 
 .homeLeft h4 {
@@ -39,6 +63,7 @@
     width: 450px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 2;
+    animation: anim4 2s cubic-bezier(0.19, 1, 0.22, 1) 8.5s both;
 }
 
 .nameImgContainer {
@@ -48,6 +73,7 @@
     background: linear-gradient(to right, rgba(250, 235, 215, 1), rgba(255,255,255,.1));
     border-radius: 25px;
     z-index: 2;
+    animation: anim3 3s cubic-bezier(0.19, 1, 0.22, 1) 9s both;
 }
 
 .nameImg {
@@ -66,6 +92,7 @@
     font-weight: 800;
     color: #727272;
     text-transform: capitalize;
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
 }
 
 .homeLeft h5 span{
@@ -87,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: anim6 4s cubic-bezier(0.19, 1, 0.22, 1) 11.5s both;
 }
 
 .selfContainer img{
@@ -110,18 +138,20 @@
     opacity: .8;
     font-weight: 800;
     margin-bottom: 30px;
+    animation: anim6 2s cubic-bezier(0.19, 1, 0.22, 1) 10s both;
 }
 
 #contact h6{
     margin-top:  5px;
     font-weight: 800;
     font-size: 12px;
-    
+    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.3s both;
 }
 
 #contact h6 span{
     color:  rgba(82, 184, 218, 1);
     font-weight: 800;
+    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.6s both;
     
 }
 
@@ -137,6 +167,7 @@
     color: rgb(255, 255, 255);
     opacity: .8;
     transition: ease-in-out 1s;
+    animation: anim4 4s cubic-bezier(0.19, 1, 0.22, 1) 10.9s both;
 }
 
 #contact div h6:hover{
