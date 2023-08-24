@@ -8,5 +8,5 @@
 html,body{
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, #ffffff,rgb(228, 228, 228),rgb(51, 51, 51));
+  background: linear-gradient(to top, #ffffff,rgb(228, 228, 228),rgb(51, 51, 51));
 }

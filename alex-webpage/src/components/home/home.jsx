@@ -32,6 +32,9 @@ export default function Home() {
                 <div className='selfContainer'>
                     <img src={Self} alt="" />
                 </div>
+                <div className='bioContainer'>
+                    <h1>Bio</h1>
+                </div>
             </div>
         </div>
     )

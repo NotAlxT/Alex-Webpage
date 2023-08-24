@@ -8,10 +8,11 @@
 
 .elem1 {
     position: absolute;
-    top: 5rem;
+    overflow: hidden;
+    top: 1rem;
     left: 15rem;
     transform: rotate(30deg);
-    height: 90%;
+    height: 70%;
     z-index: 0;
 }
 
@@ -32,6 +33,7 @@
     background-color: black;
     z-index: 2;
     animation: anim3 1s cubic-bezier(0.19, 1, 0.22, 1) 8s both;
+    margin-top: 2rem;
 }
 @keyframes anim3{
     from{
@@ -103,6 +105,7 @@
 
 .homeRight{ 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -113,14 +116,13 @@
 .selfContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-self: flex-end;
     animation: anim6 4s cubic-bezier(0.19, 1, 0.22, 1) 11.5s both;
 }
 
 .selfContainer img{
-    width: 70%;
-    height: 70%;
-    transform: scale(.8);
+    height: 30vh;
+    transform: scale(1);
     /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.2), white); */
 }
 
