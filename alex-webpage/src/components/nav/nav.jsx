@@ -12,7 +12,7 @@ export default function Nav() {
               <div className='navLinks'>
                 <a href='/'><Icon icon="solar:home-2-broken" width="40" height="40" /></a>
                 <a href='/profile'><Icon icon="fluent-mdl2:contact" width="40" height="40" /></a>
-                <a href='/'><Icon icon="solar:folder-with-files-broken" width="40" height="40" /></a>
+                <a href='/portfolio'><Icon icon="solar:folder-with-files-broken" width="40" height="40" /></a>
               </div>
         </div>
     )

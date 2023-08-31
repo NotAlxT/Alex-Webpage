@@ -5,13 +5,15 @@ import AnimatedHome from './components/animatedHome/animatedHome';
 
 import './App.css';
 import Profile from './components/profile/profile';
+import Portfolio from './components/portfolio/portfolio';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<> <Nav /><AnimatedHome /><Home /></>}> </Route>
-        <Route path='/profile' element={<> <Nav /> <Profile /></>}> </ Route>
+        <Route path="/profile" element={<> <Nav /> <Profile /></>}> </ Route>
+        <Route path="/portfolio" element={<> <Nav /> <Portfolio /></>}> </ Route>
       </Routes>
     </Router>
   );
