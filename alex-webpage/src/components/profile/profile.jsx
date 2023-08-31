@@ -1,6 +1,7 @@
 import React from 'react'
 import './profile.css'
 import Elem from '../../imgs/bgElem.png'
+import Self2 from '../../imgs/Self2.jpg'
 
 export default function Profile() {
     return (
@@ -10,7 +11,8 @@ export default function Profile() {
             <div className="profileContainer">
                 <div className="leftBox">
                     <div className="box1">
-
+                        <img className='Self2' src={Self2} alt="Self" />
+                        <h1>My Profile</h1>
                     </div>
                 </div>
                 <div className="rightBox">
