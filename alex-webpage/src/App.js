@@ -4,12 +4,14 @@ import Home from './components/home/home';
 import AnimatedHome from './components/animatedHome/animatedHome';
 
 import './App.css';
+import Profile from './components/profile/profile';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><Nav /><AnimatedHome /><Home /></>}></Route>
+        <Route path="/" element={<> <Nav /><AnimatedHome /><Home /></>}> </Route>
+        <Route path='/profile' element={<> <Nav /> <Profile /></>} />
       </Routes>
     </Router>
   );
