@@ -5,10 +5,10 @@ export default function Loader() {
     return (
         <div className="loader">
             <div className="face">
-                <div className="circle"></div>
+                <div className="circleLoader"></div>
             </div>
             <div className="face">
-                <div className="circle"></div>
+                <div className="circleLoader"></div>
             </div>
         </div>
     )

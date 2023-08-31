@@ -35,7 +35,7 @@
     animation-direction: reverse;
   }
   
-  .loader .face .circle {
+  .loader .face .circleLoader {
     position: absolute;
     width: 50%;
     height: 0.1em;
@@ -46,7 +46,7 @@
     transform-origin: left;
   }
   
-  .loader .face .circle::before {
+  .loader .face .circleLoader::before {
     position: absolute;
     top: -0.5em;
     right: -0.5em;

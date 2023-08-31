@@ -29,8 +29,10 @@
     border-radius: 1rem;
     z-index: 1;
 }
+
 .leftBox {
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -39,6 +41,7 @@
     transition: all ease-in-out .3s;
     z-index: 1;
 }
+
 .rightBox {
     display: flex;
     gap: 1rem;
@@ -47,7 +50,7 @@
     border-radius: 1rem;
     z-index: 1;
     flex-direction: column;
-    
+
 }
 
 .box1 {
@@ -60,6 +63,11 @@
     height: 100%;
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
 }
 
 
@@ -70,6 +78,11 @@
     height: 50%;
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .box3 {
@@ -79,14 +92,71 @@
     height: 50%;
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.074);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
 }
 
-.Self2{
+.circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(255, 0, 0, 0.1), rgb(250, 235, 215));
+    border-radius: 50%;
+    position: absolute;
+    animation: 5s ease-in-out infinite alternate-reverse;
+    z-index: 1;
+  }
+  .circle:nth-child(1) {
+    top: 200px;
+    left: 100px;
+    animation-name: move1;
+  }
+  
+  .circle:nth-child(2) {
+    top: 500px;
+    right: 200px;
+    animation-name: move1;
+  }
+  .circle:nth-child(3) {
+    bottom: 200px;
+    left: 200px;
+    animation-name: move3;
+  }
+  .circle:nth-child(4) {
+    bottom: 300px;
+    left: 800px;
+    animation-name: move2;
+  }
+  .circle:nth-child(5) {
+    top: 200px;
+    right: 100px;
+    animation-name: move1;
+  }
+  @keyframes move1 {
+    to {
+      transform: translateY(100px) translateX(-100px) scale(1.5);
+    }
+  }
+  
+  @keyframes move2 {
+    to {
+      transform: translateY(-80px) translateX(80px) scale(2.5);
+    
+    }
+  }
+
+  @keyframes move3 {
+    to {
+      transform: scale(2) translateX(40px);
+    
+    }
+  }
+
+  .Self2 {
     align-self: center;
     height: 45%;
     width: 45%;
     border-radius: 50%;
-}
-
-.box1 h1{
 }
