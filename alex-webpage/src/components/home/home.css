@@ -7,14 +7,24 @@
 }
 
 .elem1 {
-    position: absolute;
+    position: fixed;
     overflow: hidden;
-    top: 1rem;
-    left: 15rem;
-    transform: rotate(30deg);
+    bottom: -2rem;
+    left: -5rem;
+    transform: rotate(-30deg);
     height: 70%;
     z-index: 0;
-}
+  }
+  
+  .elem2 {
+    position: fixed;
+    top: 10rem;
+    left: 100rem;
+    transform: rotate(30deg);
+    height: 100%;
+    z-index: 0;
+  }
+  
 
 /* left side */
 

@@ -8,9 +8,10 @@ import React from 'react'
 export default function Home() {
     return (
         <div id='home' className='home'>
+            <img className='elem1' src={Elem} alt="Elem" />
+            <img className='elem2' src={Elem} alt="Elem" />
             <div className='homeLeft'>
                 <div className="top">
-                    <img className='elem1' src={Elem} alt="Elem" />
                     <div className="smallLine"></div>
                     <h4>Hello, I'm 👋</h4>
                     <div className='nameImgContainer'>
