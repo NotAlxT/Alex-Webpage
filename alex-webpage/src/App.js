@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<> <Nav /><AnimatedHome /><Home /></>}> </Route>
-        <Route path='profile' element={<> <Nav /> <Profile /></>} />
+        <Route path='/profile' element={<> <Nav /> <Profile /></>}> </ Route>
       </Routes>
     </Router>
   );
