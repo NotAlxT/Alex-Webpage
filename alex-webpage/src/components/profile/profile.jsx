@@ -46,21 +46,34 @@ export default function Profile() {
                                 <div className='subContainer2'>
                                     <h6><a href="https://www.linkedin.com/in/notalxt/" target='_blank' rel="noreferrer"><Icon icon="line-md:linkedin" color='black' width="40" height="40" /></a></h6>
                                     <h6><a href="https://github.com/NotAlxT" target='_blank' rel="noreferrer"><Icon icon="devicon:github" color='black' width="40" height="40" /></a></h6>
-                                    <h6><a href="https://alextran.netlify.app/" target='_blank' rel="noreferrer"><Icon icon="gg:website"color='black' width="40" height="40" /></a></h6>
+                                    <h6><a href="https://alextran.netlify.app/" target='_blank' rel="noreferrer"><Icon icon="gg:website" color='black' width="40" height="40" /></a></h6>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <strong></strong>
-                            <span></span>
-                            <span></span>
-                            <p></p>
                         </div>
                     </div>
                 </div>
                 <div className="rightBox">
                     <div className="box2">
-
+                        <div className="skillTitle">
+                            <div>
+                                <h1>Skills</h1>
+                            </div>
+                            <div className='line'>
+                                <div className=""></div>
+                            </div>
+                        </div>
+                        <div className="skillCard">
+                            <Icon className='Icon' icon="logos:html-5" width="40" height="40" />
+                            <Icon className='Icon' icon="logos:css-3" width="40" height="40" />
+                            <Icon className='Icon' icon="devicon:tailwindcss" width="40" height="40" />
+                            <Icon className='Icon' icon="skill-icons:javascript" width="40" height="40" />
+                            <Icon className='Icon' icon="skill-icons:typescript" width="40" height="40" />
+                            <Icon className='Icon' icon="skill-icons:react-dark" width="40" height="40" />
+                            <Icon className='Icon' icon="skill-icons:python-dark" width="40" height="40" />
+                            <Icon className='Icon' icon="logos:postgresql" width="40" height="40" />
+                            <Icon className='Icon' icon="logos:flask" width="40" height="40" />
+                            <Icon className='Icon' icon="vscode-icons:file-type-node" width="40" height="40" />
+                        </div>
                     </div>
                     <div className="box3">
 

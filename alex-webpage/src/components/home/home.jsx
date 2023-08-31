@@ -44,14 +44,9 @@ export default function Home() {
                             <img src={Self} alt="" />
                         </div>
                         <div className="bioInfo">
-                            <h1>About Me</h1>
+                            <h1>Full-Stack Developer</h1>
                             <p>
-                                Hi There, I'm Alex
-                                As someone who loves tech and learning new skills. I started off as a self-taught developer,
-                                I learned front-end and expanded my knowledge of what is needed to be a well-developed engineer.
-                                Taking a step forward, I wanted to expand my understanding of back-end work, so I graduated
-                                from a full-stack boot camp. My goal is simple, To make coding my purpose in life.
-                                It is creating projects that will make at least one person's life easier.
+                                Resume
                             </p>
                         </div>
 
