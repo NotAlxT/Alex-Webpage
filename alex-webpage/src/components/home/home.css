@@ -65,7 +65,7 @@
 
 @keyframes anim6{
     from{
-        transform: translateY(100rem);
+        transform: translateY(-100rem);
     }
 }
 
@@ -137,14 +137,15 @@
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(10deg);
-    transition: .4s;
     overflow: hidden;
     color: white;
+    transition: all ease-in-out .4s;
   }
   
   .card:hover {
     height: 55vh;
     transform: skew(0deg);
+    
   }
   
   .align{
@@ -161,6 +162,7 @@
     border-radius: 50%;
     background-color: #ff605c;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
   }
   
   .yellow {
@@ -169,6 +171,7 @@
     border-radius: 50%;
     background-color: #ffbd44;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.7s both;
   }
   
   .green {
@@ -177,6 +180,7 @@
     border-radius: 50%;
     background-color: #00ca4e;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.9s both;
   }
   
   .card h1 {
@@ -191,11 +195,13 @@
     flex-direction: row;
     justify-content: space-around;
     padding-top: 1rem;
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.6s both;
   }
 
   .bioInfo p{
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
+    animation: anim3 1s 10;
   }
   
   .selfContainer{
@@ -254,7 +260,7 @@
     color: rgb(255, 255, 255);
     opacity: .8;
     transition: ease-in-out 1s;
-    animation: anim4 4s cubic-bezier(0.19, 1, 0.22, 1) 10.9s both;
+    animation: anim3 4s cubic-bezier(0.19, 1, 0.22, 1) 10.9s both;
 }
 
 #contact div h6:hover{
