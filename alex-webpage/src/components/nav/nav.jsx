@@ -2,7 +2,6 @@ import React from 'react'
 import './nav.css'
 // import Logo from '../../imgs/logo-white.png'
 import { Icon } from '@iconify/react';
-import Loader from '../loader/loader';
 import { Link } from 'react-router-dom';
 
 export default function Nav() {
