@@ -2,7 +2,7 @@ import React from 'react'
 import './profile.css'
 import Elem from '../../imgs/bgElem.png'
 import Self2 from '../../imgs/Self2.jpg'
-import BG from '../../imgs/bgWood.jpg'
+import BG from '../../imgs/bgHex.jpg'
 import { Icon } from '@iconify/react';
 
 export default function Profile() {
@@ -32,7 +32,7 @@ export default function Profile() {
                                     <span className="bar"></span>
                                 </div>
                                 <div className='subContainer'>
-                                    <p>+1 (857)271-8817</p>
+                                    <p>+1 (857) 271-8817</p>
                                     <span className="bar"></span>
                                 </div>
                             </div>
@@ -57,6 +57,7 @@ export default function Profile() {
                         <div className="skillTitle">
                             <div>
                                 <h1>Skills</h1>
+                                <p>Languages & Tech Stacks</p>
                             </div>
                             <div className='line'>
                                 <div className=""></div>
@@ -76,7 +77,18 @@ export default function Profile() {
                         </div>
                     </div>
                     <div className="box3">
-
+                    <div className="skillTitle">
+                            <div>
+                                <h1>Attributes</h1>
+                                <p>Soft Skills</p>
+                            </div>
+                            <div className='line'>
+                                <div className=""></div>
+                            </div>
+                        </div>
+                        <div>
+                            
+                        </div>
                     </div>
                 </div>
 

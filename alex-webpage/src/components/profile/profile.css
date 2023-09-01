@@ -67,15 +67,16 @@
     position: relative;
     flex-direction: column;
     padding: 1rem;
-    z-index: 1;
+    z-index: 2;
     height: 100%;
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.074);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.222);
     border-radius: .7rem;
     -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out .3s;
 }
 
 
@@ -90,11 +91,12 @@
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.074);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.222);
     border-radius: .7rem;
     -webkit-backdrop-filter: blur(20px);
     overflow: hidden;
+    transition: all ease-in-out .3s;
 }
 
 .box3 {
@@ -106,10 +108,18 @@
     width: 100%;
     box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.074);
+    background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.222);
     border-radius: .7rem;
     -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out .3s;
+    overflow: hidden;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transition: all ease-in-out .3s;
 }
 
 .circle {
@@ -174,15 +184,17 @@
 
 .Self2 {
     align-self: center;
-    height: 45%;
-    width: 45%;
+    margin-top: 15px;
+    height: 30%;
+    width: 30%;
     border-radius: 50%;
+    border: 5px solid rgb(252, 252, 252);
     z-index: 2;
 }
 
 .bgImg {
     position: absolute;
-    height: 30%;
+    height: 25%;
     width: 100%;
     left: 0;
     top: 0;
@@ -232,7 +244,7 @@
 }
 
 .aboutMeTitle p {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.4);
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -255,9 +267,17 @@
 
 .skillTitle h1 {
     display: flex;
+    margin: 2rem 0 0 2rem;
     flex-direction: column;
     color: rgba(0, 0, 0, .8);
     font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skillTitle p {
+    margin-left: 2rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -272,7 +292,7 @@
 .line {
     width: 400px;
     height: 2px;
-    background: linear-gradient(to left, rgba(255, 255, 255,0), rgb(255, 255, 255), rgb(0, 0, 0));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgb(0, 0, 0));
     animation: rotBGimg 2s ease-in-out infinite alternate-reverse;
 
 }
@@ -287,17 +307,17 @@
     }
 }
 
-.Icon{
-    background-color: rgba(255, 255, 255, 0);
+.Icon {
+    background-color: rgb(253, 253, 253);
     border-radius: 10%;
     padding: .5rem;
-    height: 9vh;
-    width: 5rem;
+    height: 7.5vh;
+    width: 4rem;
     transition: ease-in-out .5s;
-    transform: scale(1.3);
-    box-shadow: 0 0  10px rgb(0, 0, 0)
+    box-shadow: 5px 5px 10px rgb(0, 0, 0)
 }
 
-.Icon:hover{
+.Icon:hover {
     transform: rotate(0deg);
+    transform: scale(1.2);
 }
