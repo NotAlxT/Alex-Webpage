@@ -32,7 +32,8 @@ export default function Home() {
                 </div>
             </div>
             <div className='homeRight'>
-
+                <div className='blkLine'></div>
+                <div className='blkLine2'></div>
                 <div class="card">
                     <div class="align">
                         <span class="red"></span>

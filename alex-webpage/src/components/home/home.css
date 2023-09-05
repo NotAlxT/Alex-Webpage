@@ -123,30 +123,44 @@
     margin-top: 7rem;
 }
 
+
+
+
 /* CARD */
 .card {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 40%;
     height: 50vh;
     padding: 0.5rem;
     background: rgba(233, 233, 233, 0.34);
     border-radius: 8px;
     backdrop-filter: blur(5px);
-    border-right: 3px solid rgba(255, 0, 0, 0.44);
-    border-bottom: 3px solid rgba(255, 0, 0, 0.44);
+    border-right: 3px solid rgba(0, 0, 0, 0.44);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.44);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(-10deg);
     overflow: hidden;
     color: white;
+    position: absolute;
     transition: all ease-in-out .4s;
+    animation: homeAnimation 1.5s ease infinite alternate;
   }
+
+  @keyframes homeAnimation {
+    from {
+        top: 25%;
+    }
+
+    to {
+        top: 29%;
+    }
+}
   
   .card:hover {
     height: 55vh;
     transform: skew(0deg);
-    
   }
   
   .align{
@@ -273,3 +287,22 @@
     box-shadow: 0 0  10px rgb(0, 0, 0)
 }
 
+/* line in background */
+
+.blkLine{
+    position: absolute;
+    background: linear-gradient(to left,white,rgba(0, 0, 0, 0.5),white);
+    width: 90%;
+    height: 2px;
+    left: 5%;
+}
+
+.blkLine2{
+    position: absolute;
+    background: linear-gradient(to left,rgb(255, 255, 255),rgba(0, 0, 0, 0.5),rgb(255, 255, 255));
+    width: 50%;
+    height: 2px;
+    left: -20%;
+    top: 28%;
+    rotate: 90deg;
+}

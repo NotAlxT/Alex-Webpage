@@ -64,20 +64,73 @@ export default function Profile() {
                             </div>
                         </div>
                         <div className="skillCard">
-                            <Icon className='Icon' icon="logos:html-5" width="40" height="40" />
-                            <Icon className='Icon' icon="logos:css-3" width="40" height="40" />
-                            <Icon className='Icon' icon="devicon:tailwindcss" width="40" height="40" />
-                            <Icon className='Icon' icon="skill-icons:javascript" width="40" height="40" />
-                            <Icon className='Icon' icon="skill-icons:typescript" width="40" height="40" />
-                            <Icon className='Icon' icon="skill-icons:react-dark" width="40" height="40" />
-                            <Icon className='Icon' icon="skill-icons:python-dark" width="40" height="40" />
-                            <Icon className='Icon' icon="logos:postgresql" width="40" height="40" />
-                            <Icon className='Icon' icon="logos:flask" width="40" height="40" />
-                            <Icon className='Icon' icon="vscode-icons:file-type-node" width="40" height="40" />
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="logos:html-5" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>HTML</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="logos:css-3" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>CSS</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="devicon:tailwindcss" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>TailWind</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="skill-icons:javascript" width="40" height="40" />
+
+                                <div class="skillText">
+                                    <p>Java- Script</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="skill-icons:typescript" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>Type- Script</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="skill-icons:react-dark" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>React</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="skill-icons:python-dark" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="logos:postgresql" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>SQL</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="logos:flask" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>Flask</p>
+                                </div>
+                            </div>
+                            <div className="cardSub">
+                                <Icon className='Icon' icon="vscode-icons:file-type-node" width="40" height="40" />
+                                <div class="skillText">
+                                    <p>Node.js</p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                     <div className="box3">
-                    <div className="skillTitle">
+                        <div className="skillTitle">
                             <div>
                                 <h1>Attributes</h1>
                                 <p>Soft Skills</p>
@@ -87,7 +140,7 @@ export default function Profile() {
                             </div>
                         </div>
                         <div>
-                            
+
                         </div>
                     </div>
                 </div>

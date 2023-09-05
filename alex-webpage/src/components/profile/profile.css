@@ -22,12 +22,12 @@
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    margin: 1rem;
-    height: 88vh;
-    width: auto;
+    height: 91.5vh;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     border-radius: 1rem;
     z-index: 1;
+    overflow: hidden;
 }
 
 
@@ -120,6 +120,7 @@
 .box2:hover,
 .box3:hover {
     transition: all ease-in-out .3s;
+    transform: scale(1.01);
 }
 
 .circle {
@@ -289,6 +290,75 @@
     padding: 2rem;
 }
 
+.cardSub {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    height: 5rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: all 120ms;
+    overflow: hidden;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+}
+
+.cardSub:hover{
+    transform: scale(1.5);
+}
+
+
+@keyframes skillAnimation {
+    from {
+        top: 48%;
+    }
+
+    to {
+        top: 52%;
+    }
+}
+
+.cardSub:hover .Icon {
+    width: 220px;
+    height: auto;
+    animation: none;
+    transform: rotate(15deg) translate(-35%, -25%);
+}
+
+.skillText {
+    position: absolute;
+    rotate: -60deg;
+    top: -1000%;
+    left: 0%;
+    color: #000000;
+    transition: all .5s ease-in;
+}
+
+.Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px #18181815);
+    transform: translate(-50%, -50%);
+    animation: skillAnimation 1s ease infinite alternate;
+    transition: all .5s ease-in;
+}
+
+.skillText p {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cardSub:hover .skillText {
+    top: 40%;
+    left: 0%;
+    color: rgb(255, 255, 255);
+    background: rgba(0,0,0,.5);
+    padding: .2rem;
+}
+
+
 .line {
     width: 400px;
     height: 2px;
@@ -307,7 +377,7 @@
     }
 }
 
-.Icon {
+/* .Icon {
     background-color: rgb(253, 253, 253);
     border-radius: 10%;
     padding: .5rem;
@@ -315,9 +385,9 @@
     width: 4rem;
     transition: ease-in-out .5s;
     box-shadow: 5px 5px 10px rgb(0, 0, 0)
-}
+} */
 
-.Icon:hover {
+/* .Icon:hover {
     transform: rotate(0deg);
     transform: scale(1.2);
-}
+} */
