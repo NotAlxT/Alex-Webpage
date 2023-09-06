@@ -145,16 +145,16 @@ export default function Profile() {
                                 <h1 className="attributeCardTitle">Communication</h1>
                             </div>
                             <div className="attributeCard">
-                                <h1 className="attributeCardTitle">3D Hover</h1>
+                                <h1 className="attributeCardTitle">Negotiation</h1>
                             </div>
                             <div className="attributeCard">
-                                <h1 className="attributeCardTitle">3D Hover</h1>
+                                <h1 className="attributeCardTitle">Critical Thinking</h1>
                             </div>
                             <div className="attributeCard">
-                                <h1 className="attributeCardTitle">3D Hover</h1>
+                                <h1 className="attributeCardTitle">Positivity</h1>
                             </div>
                             <div className="attributeCard">
-                                <h1 className="attributeCardTitle">3D Hover</h1>
+                                <h1 className="attributeCardTitle">Dependability</h1>
                             </div>
                         </div>
                     </div>
