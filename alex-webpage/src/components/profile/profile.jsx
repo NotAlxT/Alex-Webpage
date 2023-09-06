@@ -125,8 +125,6 @@ export default function Profile() {
                                     <p>Node.js</p>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <div className="box3">
@@ -139,8 +137,25 @@ export default function Profile() {
                                 <div className=""></div>
                             </div>
                         </div>
-                        <div>
-
+                        <div className="attributeSkill">
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">Leadership</h1>
+                            </div>
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">Communication</h1>
+                            </div>
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">3D Hover</h1>
+                            </div>
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">3D Hover</h1>
+                            </div>
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">3D Hover</h1>
+                            </div>
+                            <div className="attributeCard">
+                                <h1 className="attributeCardTitle">3D Hover</h1>
+                            </div>
                         </div>
                     </div>
                 </div>

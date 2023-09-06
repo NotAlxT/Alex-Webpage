@@ -62,6 +62,8 @@
     flex-shrink: none;
 }
 
+/* Box Main Containers */
+
 .box1 {
     display: flex;
     position: relative;
@@ -101,6 +103,7 @@
 
 .box3 {
     display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
     z-index: 1;
@@ -123,65 +126,7 @@
     transform: scale(1.01);
 }
 
-.circle {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(rgba(255, 0, 0, 0.1), rgb(250, 235, 215));
-    border-radius: 50%;
-    position: absolute;
-    animation: 4s ease-in-out infinite alternate-reverse;
-    z-index: 1;
-}
 
-.circle:nth-child(1) {
-    top: 200px;
-    left: 100px;
-    animation-name: move1;
-}
-
-.circle:nth-child(2) {
-    top: 500px;
-    right: 200px;
-    animation-name: move2;
-}
-
-.circle:nth-child(3) {
-    bottom: 200px;
-    left: 200px;
-    animation-name: move3;
-}
-
-.circle:nth-child(4) {
-    bottom: 300px;
-    left: 800px;
-    animation-name: move1;
-}
-
-.circle:nth-child(5) {
-    top: 200px;
-    right: 100px;
-    animation-name: move1;
-}
-
-@keyframes move1 {
-    to {
-        transform: translateY(100px) translateX(-100px) scale(1.5);
-    }
-}
-
-@keyframes move2 {
-    to {
-        transform: translateY(-80px) translateX(80px) scale(2.5);
-
-    }
-}
-
-@keyframes move3 {
-    to {
-        transform: scale(2) translateX(40px);
-
-    }
-}
 
 .Self2 {
     align-self: center;
@@ -266,6 +211,16 @@
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
 }
 
+/* Skills */
+
+.skillCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
 .skillTitle h1 {
     display: flex;
     margin: 2rem 0 0 2rem;
@@ -282,13 +237,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.skillCard {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 2rem;
-}
+
 
 .cardSub {
     position: relative;
@@ -377,17 +326,109 @@
     }
 }
 
-/* .Icon {
-    background-color: rgb(253, 253, 253);
-    border-radius: 10%;
-    padding: .5rem;
-    height: 7.5vh;
-    width: 4rem;
-    transition: ease-in-out .5s;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0)
-} */
 
-/* .Icon:hover {
-    transform: rotate(0deg);
-    transform: scale(1.2);
-} */
+/* Attributes */
+
+.attributeSkill {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .attributeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+  }
+  
+  .attributeCard:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+  }
+  
+  .attributeCardTitle {
+    color: #fff;
+    position: absolute;
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+  
+  .attributeCard:hover .attributeCardTitle {
+    transform: translateZ(50px);
+  }
+
+  /* Background Bubbles */
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(255, 0, 0, 0.1), rgb(250, 235, 215));
+    border-radius: 50%;
+    position: absolute;
+    animation: 4s ease-in-out infinite alternate-reverse;
+    z-index: 1;
+}
+
+.circle:nth-child(1) {
+    top: 200px;
+    left: 100px;
+    animation-name: move1;
+}
+
+.circle:nth-child(2) {
+    top: 500px;
+    right: 200px;
+    animation-name: move2;
+}
+
+.circle:nth-child(3) {
+    bottom: 200px;
+    left: 200px;
+    animation-name: move3;
+}
+
+.circle:nth-child(4) {
+    bottom: 300px;
+    left: 800px;
+    animation-name: move1;
+}
+
+.circle:nth-child(5) {
+    top: 200px;
+    right: 100px;
+    animation-name: move1;
+}
+
+@keyframes move1 {
+    to {
+        transform: translateY(100px) translateX(-100px) scale(1.5);
+    }
+}
+
+@keyframes move2 {
+    to {
+        transform: translateY(-80px) translateX(80px) scale(2.5);
+
+    }
+}
+
+@keyframes move3 {
+    to {
+        transform: scale(2) translateX(40px);
+
+    }
+}

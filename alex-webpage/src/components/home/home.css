@@ -136,8 +136,8 @@
     background: rgba(233, 233, 233, 0.34);
     border-radius: 8px;
     backdrop-filter: blur(5px);
-    border-right: 3px solid rgba(0, 0, 0, 0.44);
-    border-bottom: 3px solid rgba(0, 0, 0, 0.44);
+    border-right: 3px solid rgba(255, 0, 0, 0.44);
+    border-bottom: 3px solid rgba(255, 0, 0, 0.44);
     border-left: 2px  rgba(255, 255, 255, 0.545) outset;
     box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(-10deg);
@@ -201,7 +201,9 @@
   .card h1 {
     text-align: center;
     margin: 1.3rem;
-    color: rgb(218, 244, 237);
+    padding: 1rem 0 1rem 0;
+    color: black;
+    background: linear-gradient(to left,rgba(255, 0, 0, 0.0),rgba(182, 182, 182, 0.3),rgba(255, 0, 0, 0.0));
     text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.573);
   }
 
@@ -227,6 +229,26 @@
 .selfContainer img{
     height: 40vh;
     /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.2), white); */
+}
+
+/* PDF */
+
+.PDF{
+    width: 90%;
+    height: 35vh;
+    box-shadow: 20px 50px 10px rgba(0, 0, 0, 0.280);
+    transition: all ease-in-out .5s;
+}
+
+.PDF:hover{
+    transition: all ease-in-out .5s;
+    transform: scale(1.1);
+}
+
+.PDFImg{
+    width: 100%;
+    height: 100%;
+
 }
 
 /* contact */
@@ -306,3 +328,4 @@
     top: 28%;
     rotate: 90deg;
 }
+

@@ -4,6 +4,9 @@ import Elem from '../../imgs/bgElem.png'
 import Self from '../../imgs/Self.png'
 import { Icon } from '@iconify/react';
 import React from 'react'
+import { Link } from 'react-router-dom';
+import PDF from '../../pdf/Resume.pdf'
+import Resume from '../../imgs/Resume.png'
 
 export default function Home() {
     return (
@@ -42,13 +45,15 @@ export default function Home() {
                     </div>
                     <div className="bioContent">
                         <div className='selfContainer'>
-                            <img src={Self} alt="" />
+                            <img src={Self} alt="Selfie" />
                         </div>
                         <div className="bioInfo">
                             <h1>Full-Stack Developer</h1>
-                            <p>
-                                Resume
-                            </p>
+                            <div className='PDF'> 
+                                <a href={PDF} target="_blank">
+                                    <img className='PDFImg' src={Resume} alt="Resume" />
+                                </a>
+                            </div>
                         </div>
 
 
