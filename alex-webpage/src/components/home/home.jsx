@@ -4,7 +4,6 @@ import Elem from '../../imgs/bgElem.png'
 import Self from '../../imgs/Self.png'
 import { Icon } from '@iconify/react';
 import React from 'react'
-import { Link } from 'react-router-dom';
 import PDF from '../../pdf/Resume.pdf'
 import Resume from '../../imgs/Resume.png'
 
@@ -50,7 +49,7 @@ export default function Home() {
                         <div className="bioInfo">
                             <h1>Full-Stack Developer</h1>
                             <div className='PDF'> 
-                                <a href={PDF} target="_blank">
+                                <a href={PDF} target="_blank" rel="noreferrer">
                                     <img className='PDFImg' src={Resume} alt="Resume" />
                                 </a>
                             </div>
