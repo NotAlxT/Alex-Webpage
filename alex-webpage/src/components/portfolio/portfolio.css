@@ -1,0 +1,211 @@
+/* Sections */
+
+.pSection1 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 90vh;
+}
+
+.pSection2 {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 90vh;
+}
+
+/* Portfolio Card left side section 1 */
+
+.pSection1 .pLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+ .portfolioCard {
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    color: #000000;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+ .pCardContent {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 40px 100px 40px;
+    background: rgba(250, 235, 215);
+    border-top-left-radius: 20px;
+    transform: translateY(100px);
+    transition: transform .25s;
+  }
+  
+.pCardContent::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgba(250, 235, 215);
+  }
+  
+  .pCardContent h1 {
+    color: #868686;
+    line-height: 15px;
+    
+  }
+  
+  /* .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  } */
+  
+  .pCardContent p {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    padding-top: 1rem;
+  }
+  
+  .portfolioCard:hover .pCardContent {
+    transform: translateY(0);
+  }
+  
+  .portfolioCard:hover .pCardContent p {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+
+/* Portfolio Card right side section 1 */
+
+.pSection1 .pRight {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pSection1 .pRight div{
+    display: flex;
+    color: #ffffff;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.pSection1 .pRight p{
+    display: flex;
+    color: #000000;
+    background: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Portfolio Card left side section 2 */
+.pSection2 .pLeft {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pSection2 .pLeft div{
+    display: flex;
+    color: #ffffff;
+    background: #000000;
+    justify-content: center;
+    align-items: center;
+}
+
+.pSection2 .pLeft p{
+    display: flex;
+    color: #ffffff;
+    background: #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+/* Portfolio Card right side section 2 */
+
+.portfolioCard2 {
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    color: #000000;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+}
+
+
+.pSection2 .pRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.pCardContent2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5rem 40px 100px 40px;
+    background: rgba(250, 235, 215);
+    border-top-left-radius: 20px;
+    transform: translateY(100px);
+    transition: transform .25s;
+  }
+  
+.pCardContent2::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    left: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-95deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px rgba(250, 235, 215);
+  }
+  
+  .pCardContent2 h1 {
+    color: #868686;
+    line-height: 15px;
+    text-align: right;
+  }
+  
+  /* .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  } */
+  
+  .pCardContent2 p {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+    padding-top: 1rem;
+    text-align: right;
+  }
+  
+  .portfolioCard2:hover .pCardContent2 {
+    transform: translateY(0);
+  }
+  
+  .portfolioCard2:hover .pCardContent2 p {
+    opacity: 1;
+    transition-delay: .25s;
+  }
