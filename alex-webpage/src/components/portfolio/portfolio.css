@@ -209,3 +209,9 @@
     opacity: 1;
     transition-delay: .25s;
   }
+
+  /* Images */
+
+  .projectImg{
+    width: 100%;
+  }

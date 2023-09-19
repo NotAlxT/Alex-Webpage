@@ -123,7 +123,7 @@
 .box2:hover,
 .box3:hover {
     transition: all ease-in-out .3s;
-    transform: scale(1.01);
+    transform: scale(1.01, 1);
 }
 
 

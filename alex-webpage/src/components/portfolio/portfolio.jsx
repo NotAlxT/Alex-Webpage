@@ -1,31 +1,21 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import twoAM from '../../imgs/2AM.png'
+import Spotify from '../../imgs/SpotifyClone.png'
 import './portfolio.css'
 
 export default function Portfolio() {
-  const myRef = useRef()
-  const [elementVisible, setElementVisible] = useState()
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      const entry = entries[0];
-      setElementVisible(entry.isIntersecting)
-      console.log('elementVisible', elementVisible)
-    })
-    observer.observe(myRef.current)
-
-  }, [elementVisible])
 
   return (
     <div>
 
-
       <div className="pSection1">
         <section className='pLeft'>
           <div className="portfolioCard">
-            <div ref={myRef}>
-              image here
+            <div >
+              <img className='projectImg' src={Spotify} alt="Spotify" />
             </div>
             <div className="pCardContent">
-              <h1>Title</h1>
+              <h1>Spotify Clone</h1>
               <p>Languages used here</p>
             </div>
           </div>
@@ -46,11 +36,11 @@ export default function Portfolio() {
         </section>
         <section className='pRight'>
           <div className="portfolioCard2">
-            <div ref={myRef}>
-              image here
+            <div >
+            <img className='projectImg' src={twoAM} alt="2AM" />
             </div>
             <div className="pCardContent2">
-              <h1>Title</h1>
+              <h1>2AM</h1>
               <p>Languages used here</p>
             </div>
           </div>
@@ -61,7 +51,7 @@ export default function Portfolio() {
       <div className="pSection1">
         <section className='pLeft'>
           <div className="portfolioCard">
-            <div ref={myRef}>
+            <div >
               image here
             </div>
             <div className="pCardContent">
