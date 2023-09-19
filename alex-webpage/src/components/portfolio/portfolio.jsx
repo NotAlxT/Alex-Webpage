@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import twoAM from '../../imgs/2AM.png'
 import Spotify from '../../imgs/SpotifyClone.png'
+
 import './portfolio.css'
 
 export default function Portfolio() {
@@ -16,13 +17,18 @@ export default function Portfolio() {
             </div>
             <div className="pCardContent">
               <h1>Spotify Clone</h1>
-              <p>Languages used here</p>
+              <p>TypeScript, Next.js, Tailwind, Supabase{'(API hosting)'}, Stripe{'(Payment API)'} 
+              <br />
+              <a href="https://github.com/NotAlxT/Spotify-Clone" target='blank'>Code</a>
+              <br />
+              <a href="https://spotifyclone-alx-seven.vercel.app/" target='blank'>Website</a>
+              </p>
             </div>
           </div>
         </section>
         <section className='pRight'>
           <div>
-            <p>Info here</p>
+            <p>I have a passion for music, and it is a part of my daily existence. From the moment I wake up, during my work hours, moments of relaxation, and even when I'm out and about, Spotify accompanies me, serving as the soundtrack to my diverse moods and experiences. I wanted to recreate the source that brings me so much joy and motivation.</p>
           </div>
         </section>
       </div>
@@ -31,7 +37,7 @@ export default function Portfolio() {
       <div className="pSection2">
         <section className='pLeft'>
           <div>
-            <p>Info here</p>
+            <p>My first major project, an eCommerce website featuring video reviews and live chat functionality—a venture that also represented my introduction to collaborative group projects</p>
           </div>
         </section>
         <section className='pRight'>
@@ -41,7 +47,12 @@ export default function Portfolio() {
             </div>
             <div className="pCardContent2">
               <h1>2AM</h1>
-              <p>Languages used here</p>
+              <p>React, JavaScript, Css, Bootstrap
+              <br />
+              <a href="https://github.com/NotAlxT/2AM-group-project" target='blank'>Code</a>
+              <br />
+              <a href="https://2amproject.netlify.app" target='blank'>Website</a>
+              </p>
             </div>
           </div>
 
