@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import twoAM from '../../imgs/2AM.png'
 import Spotify from '../../imgs/SpotifyClone.png'
 
