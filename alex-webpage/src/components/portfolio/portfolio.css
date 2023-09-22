@@ -34,6 +34,7 @@
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+
 }
 
  .pCardContent {
@@ -41,10 +42,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1.5rem 40px 100px 40px;
+    height: 130px;
+    padding: 1.5rem 40px 0px 40px;
     background: rgba(250, 235, 215);
-    border-top-left-radius: 20px;
-    transform: translateY(100px);
+    border-top-right-radius: 20px;
+    transform: translateY(50px);
     transition: transform .25s;
   }
   
@@ -58,12 +60,21 @@
     transform: rotate(-175deg);
     border-radius: 50%;
     box-shadow: inset 48px 48px rgba(250, 235, 215);
+    
   }
   
   .pCardContent h1 {
     color: #868686;
     line-height: 15px;
-    
+    font-family: cursive;
+    text-decoration: none;
+  }
+
+  .pCardContent a {
+    color: #868686;
+    line-height: 15px;
+    font-family: cursive;
+    text-decoration: none;
   }
   
   /* .card_subtitle {
@@ -162,10 +173,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1.5rem 40px 100px 40px;
+    height: 130px;
+    padding: 1.5rem 40px 0px 40px;
     background: rgba(250, 235, 215);
     border-top-left-radius: 20px;
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition: transform .25s;
   }
   
@@ -181,7 +193,9 @@
     box-shadow: inset 48px 48px rgba(250, 235, 215);
   }
   
-  .pCardContent2 h1 {
+  .pCardContent2 h1, .pCardContent2 a {
+    font-family: cursive;
+    text-decoration: none;
     color: #868686;
     line-height: 15px;
     text-align: right;

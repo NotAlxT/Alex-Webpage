@@ -59,7 +59,7 @@ export default function Portfolio() {
         </section>
       </div>
 
-      <div className="pSection1">
+      {/* <div className="pSection1">
         <section className='pLeft'>
           <div className="portfolioCard">
             <div >
@@ -137,7 +137,7 @@ export default function Portfolio() {
           </div>
 
         </section>
-      </div> 
+      </div>  */}
 
 
 
