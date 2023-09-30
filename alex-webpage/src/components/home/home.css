@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
+    margin: 2px;
 }
 
 .elem1 {
@@ -14,26 +16,48 @@
     transform: rotate(-30deg);
     height: 70%;
     z-index: 0;
-  }
-  
-  .elem2 {
+}
+
+.elem2 {
     position: fixed;
     top: 10rem;
     left: 100rem;
     transform: rotate(30deg);
     height: 100%;
     z-index: 0;
-  }
-  
+}
+
+/* line in background */
+
+.blkLine {
+    position: absolute;
+    background: linear-gradient(to left, white, rgba(0, 0, 0, 0.5), white);
+    width: 90%;
+    height: 2px;
+    right: 0%;
+    top: 80%;
+}
+
+.blkLine2 {
+    position: absolute;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0.5), rgb(255, 255, 255));
+    width: 50%;
+    height: 2px;
+    left: -20%;
+    top: 28%;
+    rotate: 90deg;
+}
+
 
 /* left side */
 
 .homeLeft {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
     height: 100%;
-    padding-left: 180px;
     z-index: 2;
 }
 
@@ -45,26 +69,27 @@
     animation: anim3 1s cubic-bezier(0.19, 1, 0.22, 1) 8s both;
     margin-top: 2rem;
 }
-@keyframes anim3{
-    from{
+
+@keyframes anim3 {
+    from {
         transform: translateX(-100rem);
     }
 }
 
-@keyframes anim4{
-    from{
+@keyframes anim4 {
+    from {
         transform: translateY(-100rem);
     }
 }
 
-@keyframes anim5{
-    from{
+@keyframes anim5 {
+    from {
         transform: translateX(100rem);
     }
 }
 
-@keyframes anim6{
-    from{
+@keyframes anim6 {
+    from {
         transform: translateY(-100rem);
     }
 }
@@ -82,7 +107,7 @@
     margin-top: 1rem;
     width: 20rem;
     height: auto;
-    background: linear-gradient(to right, rgba(250, 235, 215, 1), rgba(255,255,255,.1));
+    background: linear-gradient(to right, rgba(250, 235, 215, 1), rgba(255, 255, 255, .1));
     border-radius: 25px;
     z-index: 2;
     animation: anim3 3s cubic-bezier(0.19, 1, 0.22, 1) 9s both;
@@ -95,7 +120,7 @@
     border-radius: 20px; */
 }
 
-.homeLeft h5{
+.homeLeft h5 {
     position: relative;
     font-size: 22px;
     letter-spacing: 9px;
@@ -107,30 +132,27 @@
     animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
 }
 
-.homeLeft h5 span{
+.homeLeft h5 span {
     color: rgba(82, 184, 218, 1);
 }
 
 /* right side */
 
-.homeRight{ 
+.homeRight {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 50%;
-    height: 100%;
-    margin-top: 7rem;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    position: relative;
 }
-
-
-
 
 /* CARD */
 .card {
     display: flex;
     flex-direction: column;
     width: 40%;
+    min-width: 400px;
     height: 50vh;
     padding: 0.5rem;
     background: rgba(233, 233, 233, 0.34);
@@ -138,17 +160,17 @@
     backdrop-filter: blur(5px);
     border-right: 3px solid rgba(255, 0, 0, 0.44);
     border-bottom: 3px solid rgba(255, 0, 0, 0.44);
-    border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+    border-left: 2px rgba(255, 255, 255, 0.545) outset;
     box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.280);
     transform: skewX(-10deg);
     overflow: hidden;
-    color: white;
     position: absolute;
+    color: white;
     transition: all ease-in-out .4s;
     animation: homeAnimation 1.5s ease infinite alternate;
-  }
+}
 
-  @keyframes homeAnimation {
+@keyframes homeAnimation {
     from {
         top: 25%;
     }
@@ -157,111 +179,110 @@
         top: 29%;
     }
 }
-  
-  .card:hover {
+
+.card:hover {
     height: 55vh;
     transform: skew(0deg);
-  }
-  
-  .align{
+}
+
+.align {
     padding: 1rem;
     display: flex;
     flex-direction: row;
     gap: 5px;
     align-self: flex-start;
-  }
-  
-  .red {
+}
+
+.red {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #ff605c;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
     animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
-  }
-  
-  .yellow {
+}
+
+.yellow {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #ffbd44;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
     animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.7s both;
-  }
-  
-  .green {
+}
+
+.green {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #00ca4e;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
     animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.9s both;
-  }
-  
-  .card h1 {
+}
+
+.card h1 {
     text-align: center;
     margin: 1.3rem;
     padding: 1rem 0 1rem 0;
     color: black;
-    background: linear-gradient(to left,rgba(255, 0, 0, 0.0),rgba(182, 182, 182, 0.3),rgba(255, 0, 0, 0.0));
+    background: linear-gradient(to left, rgba(255, 0, 0, 0.0), rgba(182, 182, 182, 0.3), rgba(255, 0, 0, 0.0));
     text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.573);
-  }
+}
 
-  .bioContent{
+.bioContent {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 1rem;
     animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.6s both;
-  }
+}
 
-  .bioInfo p{
+.bioInfo p {
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
     animation: anim3 1s 10;
-  }
-  
-  .selfContainer{
+}
+
+.selfContainer {
     display: flex;
     animation: anim6 4s cubic-bezier(0.19, 1, 0.22, 1) 11.5s both;
 }
 
-.selfContainer img{
+.selfContainer img {
     height: 40vh;
     /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.2), white); */
 }
 
 /* PDF */
 
-.PDF{
+.PDF {
     width: 90%;
     height: 35vh;
     box-shadow: 20px 50px 10px rgba(0, 0, 0, 0.280);
     transition: all ease-in-out .5s;
 }
 
-.PDF:hover{
+.PDF:hover {
     transition: all ease-in-out .5s;
     transform: scale(1.1);
 }
 
-.PDFImg{
+.PDFImg {
     width: 100%;
     height: 100%;
 
 }
 
 /* contact */
-.bottom{
+.bottom {
     justify-self: flex-end;
 }
 
 #contact {
-    margin-top:  200px;
-    z-index: 2;
+    margin-top: 7rem;
 }
 
-#contact h3{
+#contact h3 {
     text-transform: uppercase;
     letter-spacing: 15px;
     font-size: 12px;
@@ -271,27 +292,28 @@
     animation: anim6 2s cubic-bezier(0.19, 1, 0.22, 1) 10s both;
 }
 
-#contact h6{
-    margin-top:  5px;
+#contact h6 {
+    margin-top: 5px;
     font-weight: 800;
     font-size: 12px;
     animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.3s both;
 }
 
-#contact h6 span{
-    color:  rgba(82, 184, 218, 1);
+#contact h6 span {
+    color: rgba(82, 184, 218, 1);
     font-weight: 800;
     animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.6s both;
-    
+
 }
 
-#contact div{
+#contact div {
     display: flex;
     padding-left: 1rem;
     gap: .5rem;
+
 }
 
-#contact div h6{
+#contact div h6 {
     padding-top: .5rem;
     border-radius: 20%;
     color: rgb(255, 255, 255);
@@ -300,32 +322,12 @@
     animation: anim3 4s cubic-bezier(0.19, 1, 0.22, 1) 10.9s both;
 }
 
-#contact div h6:hover{
+#contact div h6:hover {
     color: black;
     opacity: 1;
     background-color: rgba(250, 235, 215, .7);
-    transition: ease-in-out .5s;
+    transition: ease-in-out .3s;
     transform: scale(1.1);
-    box-shadow: 0 0  10px rgb(0, 0, 0)
-}
-
-/* line in background */
-
-.blkLine{
-    position: absolute;
-    background: linear-gradient(to left,white,rgba(0, 0, 0, 0.5),white);
-    width: 90%;
-    height: 2px;
-    left: 5%;
-}
-
-.blkLine2{
-    position: absolute;
-    background: linear-gradient(to left,rgb(255, 255, 255),rgba(0, 0, 0, 0.5),rgb(255, 255, 255));
-    width: 50%;
-    height: 2px;
-    left: -20%;
-    top: 28%;
-    rotate: 90deg;
+    box-shadow: 0 0 10px rgb(0, 0, 0)
 }
 

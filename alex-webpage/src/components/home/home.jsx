@@ -12,6 +12,8 @@ export default function Home() {
         <div id='home' className='home'>
             <img className='elem1' src={Elem} alt="Elem" />
             <img className='elem2' src={Elem} alt="Elem" />
+            <div className='blkLine'></div>
+            <div className='blkLine2'></div>
             <div className='homeLeft'>
                 <div className="top">
                     <div className="smallLine"></div>
@@ -34,8 +36,7 @@ export default function Home() {
                 </div>
             </div>
             <div className='homeRight'>
-                <div className='blkLine'></div>
-                <div className='blkLine2'></div>
+                
                 <div class="card">
                     <div class="align">
                         <span class="red"></span>
