@@ -1,6 +1,7 @@
 import React from 'react'
 import twoAM from '../../imgs/2AM.png'
 import Spotify from '../../imgs/SpotifyClone.png'
+import CourtCheck from '../../imgs/CourtCheck.png'
 
 import './portfolio.css'
 
@@ -37,7 +38,7 @@ export default function Portfolio() {
       <div className="pSection2">
         <section className='pLeft'>
           <div>
-            <p>My first major project, an eCommerce website featuring video reviews and live chat functionality—a venture that also represented my introduction to collaborative group projects</p>
+            <p>My first major project, an eCommerce website featuring video reviews and live chat functionality—a venture that also represented my introduction to collaborative group projects.</p>
           </div>
         </section>
         <section className='pRight'>
@@ -56,6 +57,30 @@ export default function Portfolio() {
             </div>
           </div>
 
+        </section>
+      </div>
+
+      <div className="pSection1">
+        <section className='pLeft'>
+          <div className="portfolioCard">
+            <div >
+              <img className='projectImg' src={CourtCheck} alt="CourtCheck" />
+            </div>
+            <div className="pCardContent">
+              <h1>CourtCheck</h1>
+              <p>TypeScript, Next.js, Tailwind
+              <br />
+              <a href="https://github.com/NotAlxT/Court-Check" target='blank'>Code</a>
+              <br />
+              <a href="https://court-check.netlify.app/" target='blank'>Website</a>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className='pRight'>
+          <div>
+            <p> Developed a website for an App-Based Startup company as their lead Web-Developer. This app is all about helping basketball enthusiasts locate courts and connect with other players for pickup games and tournaments. </p>
+          </div>
         </section>
       </div>
 
