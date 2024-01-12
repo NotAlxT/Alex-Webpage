@@ -29,7 +29,7 @@ export default function Portfolio() {
         </section>
         <section className='pRight'>
           <div>
-            <p>I have a passion for music, and it is a part of my daily existence. From the moment I wake up, during my work hours, moments of relaxation, and even when I'm out and about, Spotify accompanies me, serving as the soundtrack to my diverse moods and experiences. I wanted to recreate the source that brings me so much joy and motivation.</p>
+            <p>I have a passion for music, for it's a part of my daily existence. From the moment I wake up, during my work hours, moments of relaxation, and even when I'm out and about, Spotify accompanies me, serving as the soundtrack to my diverse moods and experiences. I wanted to recreate the source that brings me so much joy and motivation.</p>
           </div>
         </section>
       </div>
