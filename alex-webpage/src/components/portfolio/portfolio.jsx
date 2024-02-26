@@ -4,12 +4,13 @@ import Spotify from '../../imgs/SpotifyClone.png'
 import CourtCheck from '../../imgs/CourtCheck.png'
 
 import './portfolio.css'
+import Nav from '../nav/nav'
 
 export default function Portfolio() {
 
   return (
     <div>
-
+      <Nav />
       <div className="pSection1">
         <section className='pLeft'>
           <div className="portfolioCard">

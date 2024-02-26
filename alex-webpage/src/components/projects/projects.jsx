@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Icon } from '@iconify/react';
 import './projects.css'
+import Nav from '../nav/nav';
 
 export default function projects() {
 
     return (
         <div >
+            <Nav />
             <div className={`pHomeContainer`}>
 
                 <section className="pProjectsContainer">

@@ -15,13 +15,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<> <Nav /><AnimatedHome /><Home /></>}> </Route>
-        <Route path="/profile" element={<> <Nav /> <Profile /></>}> </ Route>
-        <Route path="/portfolio" element={<> <Nav /> <Portfolio /></>}> </ Route>
-        <Route path="/projects" element={<> <Nav /> <Projects /> </>}> </ Route>
-        <Route path="/calculator" element={<> <Nav /> <Calculator /> </>}> </ Route>
-        <Route path="/timer" element={<> <Nav /> <ClockTimer /> </>}> </ Route>
-        <Route path="/todoList" element={<> <Nav /> <TodoList /> </>}> </ Route>
+        <Route path="/" element={<> <Home /></>}> </Route>
+        <Route path="/profile" element={<> <Profile /></>}> </ Route>
+        <Route path="/portfolio" element={<>  <Portfolio /></>}> </ Route>
+        <Route path="/projects" element={<> <Projects /> </>}> </ Route>
+        <Route path="/calculator" element={<>  <Calculator /> </>}> </ Route>
+        <Route path="/timer" element={<> <ClockTimer /> </>}> </ Route>
+        <Route path="/todoList" element={<>  <TodoList /> </>}> </ Route>
       </Routes>
     </Router>
   );

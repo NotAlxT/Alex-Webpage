@@ -2,7 +2,6 @@
     0% {
       opacity: 0;
       transform: scale(0) translateY(50%);
-  
     }
   
     90% {
@@ -54,6 +53,7 @@
       0px 0px 100px rgb(255, 255, 255),
       0px 0px 2px rgb(255, 255, 255);
       overflow: hidden;
+      
   }
   
   .pCard:hover {

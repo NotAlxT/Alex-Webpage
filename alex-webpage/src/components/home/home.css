@@ -1,11 +1,26 @@
-.home {
+.homeContainer{
+    background-image: url(../../imgs/deskBg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    margin: 2px;
+    height: auto;
+}
+
+.home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    
+    
 }
 
 .elem1 {
@@ -26,47 +41,28 @@
     height: 100%;
     z-index: 0;
 }
-
-/* line in background */
-
-.blkLine {
-    position: absolute;
-    background: linear-gradient(to left, white, rgba(0, 0, 0, 0.5), white);
-    width: 90%;
-    height: 2px;
-    right: 0%;
-    top: 80%;
-}
-
-.blkLine2 {
-    position: absolute;
-    background: linear-gradient(to left, rgb(255, 255, 255), rgba(0, 0, 0, 0.5), rgb(255, 255, 255));
-    width: 50%;
-    height: 2px;
-    left: -20%;
-    top: 28%;
-    rotate: 90deg;
-}
-
-
 /* left side */
 
 .homeLeft {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    margin-left: 20rem;
     width: 100%;
     height: 100%;
     z-index: 2;
 }
 
+.top h4{
+    color: white;
+}
+
 .smallLine {
     width: 50px;
     height: 3px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     z-index: 2;
-    animation: anim3 1s cubic-bezier(0.19, 1, 0.22, 1) 8s both;
+    animation: anim3 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
     margin-top: 2rem;
 }
 
@@ -100,7 +96,7 @@
     width: 450px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 2;
-    animation: anim4 2s cubic-bezier(0.19, 1, 0.22, 1) 8.5s both;
+    animation: anim4 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
 }
 
 .nameImgContainer {
@@ -110,7 +106,7 @@
     background: linear-gradient(to right, rgba(250, 235, 215, 1), rgba(255, 255, 255, .1));
     border-radius: 25px;
     z-index: 2;
-    animation: anim3 3s cubic-bezier(0.19, 1, 0.22, 1) 9s both;
+    animation: anim3 3s cubic-bezier(0.19, 1, 0.22, 1) 2s both;
 }
 
 .nameImg {
@@ -129,7 +125,7 @@
     font-weight: 800;
     color: #727272;
     text-transform: capitalize;
-    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
+    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 2.5s both;
 }
 
 .homeLeft h5 span {
@@ -140,146 +136,22 @@
 
 .homeRight {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 80vh;
-    align-items: center;
+    margin-left: 20rem;
     position: relative;
 }
 
-/* CARD */
-.card {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    min-width: 400px;
-    height: 50vh;
-    padding: 0.5rem;
-    background: rgba(233, 233, 233, 0.34);
-    border-radius: 8px;
-    backdrop-filter: blur(5px);
-    border-right: 3px solid rgba(255, 0, 0, 0.44);
-    border-bottom: 3px solid rgba(255, 0, 0, 0.44);
-    border-left: 2px rgba(255, 255, 255, 0.545) outset;
-    box-shadow: 40px 50px 30px rgba(0, 0, 0, 0.280);
-    transform: skewX(-10deg);
-    overflow: hidden;
-    position: absolute;
-    color: white;
-    transition: all ease-in-out .4s;
-    animation: homeAnimation 1.5s ease infinite alternate;
-}
 
-@keyframes homeAnimation {
-    from {
-        top: 25%;
-    }
-
-    to {
-        top: 29%;
-    }
-}
-
-.card:hover {
-    height: 55vh;
-    transform: skew(0deg);
-}
-
-.align {
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-self: flex-start;
-}
-
-.red {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ff605c;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
-    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.5s both;
-}
-
-.yellow {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ffbd44;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
-    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.7s both;
-}
-
-.green {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #00ca4e;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.280);
-    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.9s both;
-}
-
-.card h1 {
-    text-align: center;
-    margin: 1.3rem;
-    padding: 1rem 0 1rem 0;
-    color: black;
-    background: linear-gradient(to left, rgba(255, 0, 0, 0.0), rgba(182, 182, 182, 0.3), rgba(255, 0, 0, 0.0));
-    text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.573);
-}
-
-.bioContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 1rem;
-    animation: anim3 2s cubic-bezier(0.19, 1, 0.22, 1) 9.6s both;
-}
-
-.bioInfo p {
-    color: rgb(0, 0, 0);
-    font-size: 1.3rem;
-    animation: anim3 1s 10;
-}
-
-.selfContainer {
-    display: flex;
-    animation: anim6 4s cubic-bezier(0.19, 1, 0.22, 1) 11.5s both;
-}
-
-.selfContainer img {
-    height: 40vh;
-    /* background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.2), white); */
-}
-
-/* PDF */
-
-.PDF {
-    width: 90%;
-    height: 35vh;
-    box-shadow: 20px 50px 10px rgba(0, 0, 0, 0.280);
-    transition: all ease-in-out .5s;
-}
-
-.PDF:hover {
-    transition: all ease-in-out .5s;
-    transform: scale(1.1);
-}
-
-.PDFImg {
-    width: 100%;
-    height: 100%;
-
-}
 
 /* contact */
 .bottom {
-    justify-self: flex-end;
+    display: flex;
+    margin-top: 10rem;
 }
 
 #contact {
-    margin-top: 7rem;
+    
 }
 
 #contact h3 {
@@ -289,37 +161,43 @@
     opacity: .8;
     font-weight: 800;
     margin-bottom: 30px;
-    animation: anim6 2s cubic-bezier(0.19, 1, 0.22, 1) 10s both;
+    animation: anim6 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+    color: white;
 }
 
 #contact h6 {
     margin-top: 5px;
     font-weight: 800;
     font-size: 12px;
-    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.3s both;
+    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 3.3s both;
+    color: #727272;
 }
 
 #contact h6 span {
     color: rgba(82, 184, 218, 1);
     font-weight: 800;
-    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 10.6s both;
+    animation: anim6 3s cubic-bezier(0.19, 1, 0.22, 1) 3.6s both;
 
 }
 
 #contact div {
     display: flex;
     padding-left: 1rem;
-    gap: .5rem;
+    gap: 1rem;
+    width: max-content;
 
 }
 
 #contact div h6 {
+    display: flex;
+    justify-content: center;
     padding-top: .5rem;
     border-radius: 20%;
     color: rgb(255, 255, 255);
+    width: 3rem;
     opacity: .8;
     transition: ease-in-out 1s;
-    animation: anim3 4s cubic-bezier(0.19, 1, 0.22, 1) 10.9s both;
+    animation: anim3 4s cubic-bezier(0.19, 1, 0.22, 1) 3.9s both;
 }
 
 #contact div h6:hover {
