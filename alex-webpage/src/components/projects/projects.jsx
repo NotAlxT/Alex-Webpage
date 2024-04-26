@@ -11,6 +11,10 @@ export default function projects() {
             <div className={`pHomeContainer`}>
 
                 <section className="pProjectsContainer">
+
+                    
+
+
                     <div className="pProject">
                         {/* TODO add img, add link, add design for box layout */}
                         <div className="pContainer">

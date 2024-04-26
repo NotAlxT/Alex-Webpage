@@ -1,9 +1,11 @@
 import React from 'react'
 import './timer.css'
+import Nav from '../../nav/nav'
 
 export default function TimerProps(props) {
-    return (<div>
-
+    return (
+    <div>
+        <Nav />
         <div className="Timer">
             <div className='timer-h'>{props.time.h >= 10 ? props.time.h : "0" + props.time.h}</div>
             <h1>:</h1>

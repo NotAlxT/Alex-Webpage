@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 import { DigitButton, OperationButton } from './button';
 import './calculator.css';
+import Nav from '../../nav/nav';
 
 export const ACTIONS = {
   ADD_DIGIT: "add-digit",
@@ -137,6 +138,7 @@ function Calculator() {
 
   return (
     <div>
+      <Nav />
       <div className='codeContainer'>
         <p className='code'> <a href="https://github.com/NotAlxT/MiniProjects/tree/main/miniprojects/src/components/projects/calculator" target="_blank" rel='noreferrer'>Code</a></p>
       </div>

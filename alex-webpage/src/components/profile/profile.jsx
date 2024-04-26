@@ -1,7 +1,6 @@
 import React from 'react'
 import './profile.css'
 import Elem from '../../imgs/bgElem.png'
-import Self2 from '../../imgs/Self.png'
 import BG from '../../imgs/bgHex.jpg'
 import { Icon } from '@iconify/react';
 import Nav from '../nav/nav'
@@ -9,7 +8,7 @@ import Nav from '../nav/nav'
 export default function Profile() {
     return (
         <>
-        <Nav />
+            <Nav />
             <img className='elem3' src={Elem} alt="Elem" />
             <img className='elem4' src={Elem} alt="Elem" />
             <div className="profileContainer">
@@ -22,10 +21,12 @@ export default function Profile() {
 
                     <div className="box1">
                         <img className='bgImg' src={BG} alt="background" />
-                        <div className='Self2'>
-                            <img  src={Self2} alt="Self" />
+                        <div className="relative top-20">
+                            <div className="loader"></div>
+                            <div className="loader"></div>
+                            <div className="loader"></div>
                         </div>
-                        
+
                         <div className='aboutMeContainer'>
                             <div className='aboutMeTitle'>
                                 <h1>Alex Tran</h1>

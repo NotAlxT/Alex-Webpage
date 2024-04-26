@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './todoList.css'
+import Nav from '../../nav/nav'
 
 export default function TodoList() {
 
@@ -48,6 +49,7 @@ export default function TodoList() {
 
   return (
     <div>
+      <Nav />
       <form onSubmit={handleSubmit}>
 
         <div className='codeContainer'>
