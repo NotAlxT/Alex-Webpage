@@ -20,7 +20,7 @@ export default function Home() {
                 <div className='flex flex-col justify-center items-center'>
                     <h4 className='text-[rgb(249,211,200)] m-10 '>Hello 👋, I'm </h4>
                     <div className='bg-[rgb(249,211,200)] w-[150px] h-[1px] rounded-3xl'></div>
-                    <div className="btn-shine "> Alex Tran</div>
+                    <div className="btn-shine "> Alex Tran </div>
                     <div className='bg-[rgb(249,211,200)] w-[150px] h-[1px] rounded-3xl'></div>
                     <h1 className='text-2xl text-[rgb(249,211,200)] ' style={{ margin: '50px' }}>
                         I'm a {' '}

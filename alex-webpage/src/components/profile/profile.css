@@ -182,3 +182,19 @@
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
   }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-300px); /* Adjust based on the number of words */
+    }
+  }
+  
+  .slide {
+    animation: slide 5s alternate linear infinite;
+  }
+  .slideReverse {
+    animation: slide 5s alternate-reverse linear infinite;
+  }
