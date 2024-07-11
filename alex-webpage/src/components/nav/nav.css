@@ -32,7 +32,7 @@
     display: flex;
     border-radius: 30%;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(116, 116, 116);
     opacity: 1;
     transition: ease-in-out 1s;
     z-index: 9;

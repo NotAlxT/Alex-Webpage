@@ -1,172 +1,94 @@
 import React from 'react'
-import './profile.css'
-import Elem from '../../imgs/bgElem.png'
-import BG from '../../imgs/bgHex.jpg'
-import { Icon } from '@iconify/react';
 import Nav from '../nav/nav'
+import './profile.css'
 
 export default function Profile() {
-    return (
-        <>
-            <Nav />
-            <img className='elem3' src={Elem} alt="Elem" />
-            <img className='elem4' src={Elem} alt="Elem" />
-            <div className="profileContainer">
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="circle"></div>
-                <div className="leftBox">
 
-                    <div className="box1">
-                        <img className='bgImg' src={BG} alt="background" />
-                        <div className="relative top-20">
-                            <div className="loader"></div>
-                            <div className="loader"></div>
-                            <div className="loader"></div>
-                        </div>
+  return (
+    <div className='w-full h-full bg-contain bg-black '>
+      <div className='flex flex-col w-full justify-center items-center gap-10'>
+        <Nav />
 
-                        <div className='aboutMeContainer'>
-                            <div className='aboutMeTitle'>
-                                <h1>Alex Tran</h1>
-                                <p>Boston, Ma</p>
-                            </div>
-                            <div className='aboutMeContainerSub'>
-                                <div className='subContainer'>
-                                    <p>Alex Tran</p>
-                                    <span className="bar"></span>
-                                </div>
-                                <div className='subContainer'>
-                                    <p>+1 (857) 271-8817</p>
-                                    <span className="bar"></span>
-                                </div>
-                            </div>
-                            <div className='aboutMeContainerSub'>
-                                <div className='subContainer'>
-                                    <p>AnhNTran56@gmail.com</p>
-                                    <span className="bar2"></span>
-                                </div>
-                            </div>
-                            <div className='aboutMeContainerSub'>
-                                <div className='subContainer2'>
-                                    <h6><a href="https://www.linkedin.com/in/notalxt/" target='_blank' rel="noreferrer"><Icon icon="line-md:linkedin" color='black' width="40" height="40" /></a></h6>
-                                    <h6><a href="https://github.com/NotAlxT" target='_blank' rel="noreferrer"><Icon icon="devicon:github" color='black' width="40" height="40" /></a></h6>
-                                    <h6><a href="https://alextran.netlify.app/" target='_blank' rel="noreferrer"><Icon icon="gg:website" color='black' width="40" height="40" /></a></h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="rightBox">
-                    <div className="box2">
-                        <div className="skillTitle">
-                            <div>
-                                <h1>Skills</h1>
-                                <p>Languages & Tech Stacks</p>
-                            </div>
-                            <div className='line'>
-                                <div className=""></div>
-                            </div>
-                        </div>
-                        <div className="skillCard">
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="logos:html-5" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>HTML</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="logos:css-3" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>CSS</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="devicon:tailwindcss" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>TailWind</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="skill-icons:javascript" width="40" height="40" />
+        <div className='flex justify-center items-center w-full h-[70vh] flex-col'>
 
-                                <div class="skillText">
-                                    <p>Java- Script</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="skill-icons:typescript" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>Type- Script</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="skill-icons:react-dark" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>React</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="skill-icons:python-dark" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>Python</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="logos:postgresql" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>SQL</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="logos:flask" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>Flask</p>
-                                </div>
-                            </div>
-                            <div className="cardSub">
-                                <Icon className='Icon' icon="vscode-icons:file-type-node" width="40" height="40" />
-                                <div class="skillText">
-                                    <p>Node.js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="box3">
-                        <div className="skillTitle">
-                            <div>
-                                <h1>Attributes</h1>
-                                <p>Soft Skills</p>
-                            </div>
-                            <div className='line'>
-                                <div className=""></div>
-                            </div>
-                        </div>
-                        <div className="attributeSkill">
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Leadership</h1>
-                            </div>
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Communication</h1>
-                            </div>
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Negotiation</h1>
-                            </div>
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Critical Thinking</h1>
-                            </div>
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Positivity</h1>
-                            </div>
-                            <div className="attributeCard">
-                                <h1 className="attributeCardTitle">Dependability</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className='text-white text-9xl zeyada-regular'>
+            About me
+          </div>
+
+          <div className="relative flex">
+            <div className="loader"></div>
+            <div className="loader"></div>
+            <div className="loader"></div>
+          </div>
+
+        </div>
+
+        <div className='bg-white w-[70%] h-[1px] rounded-lg mt-10'></div>
+
+        <div className='flex justify-around w-[70%]'>
+          <div className='text-white zeyada-regular flex text-5xl'>Experience</div>
+          <div className='text-white zeyada-regular flex text-5xl'></div>
+        </div>
+
+        <div className='flex justify-start w-[70%] flex-col gap-10'>
+          <div className='text-white flex flex-row gap-1'>
+            <span className='flex justify-center items-center w-60 h-14 rounded-xl bg-[#414141]'>
+              <h1>Software Developer</h1>
+            </span>
+
+            <span className='flex bg-[#2e2e2e] rounded-xl w-full h-full p-10'>
+              <div>
+asd
+              </div>
+            </span>
+          </div>
+
+          <div className='text-white flex bg-[#414141] rounded-xl w-60 h-14 justify-center items-center'>
+            <h1>Real Estate Developer</h1>
+          </div>
+
+        </div>
+
+        <div className='flex items-center justify-center'>
+          <div className='text-white'>
+            <div className='flex flex-row gap-10'>
+              <p>HTML</p>
+              <p>|</p>
+              <p>CSS</p>
+              <p>|</p>
+              <p>JavaScript</p>
+              <p>|</p>
+              <p>React</p>
+              <p>|</p>
+              <p>Next.js</p>
+              <p>|</p>
+              <p>Tailwind</p>
+              <p>|</p>
+              <p>Python</p>
+              <p>|</p>
+              <p>SQL</p>
+              <p>|</p>
+              <p>Git</p>
+              <p>|</p>
+              <p>Flux</p>
+              <p>|</p>
+              <p>Node.js</p>
+            </div>
+
+          </div>
+
+          <div className='flex flex-row w-full h-[100vh]'>
+            <div>
 
             </div>
-        </>
-    )
+
+            <div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  )
 }

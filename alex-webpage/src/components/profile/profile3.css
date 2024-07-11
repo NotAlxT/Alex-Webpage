@@ -1,0 +1,446 @@
+.elem3 {
+    position: fixed;
+    overflow: hidden;
+    bottom: -2rem;
+    left: -5rem;
+    transform: rotate(-30deg);
+    height: 70%;
+    z-index: 1;
+}
+
+.elem4 {
+    position: fixed;
+    top: 10rem;
+    left: 100rem;
+    transform: rotate(30deg);
+    height: 100%;
+    z-index: 1;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+
+.leftBox {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90%;
+    width: 45%;
+    min-width: 50rem;
+    max-width: 50rem;
+    min-height: 45rem;
+    max-height: 45rem;
+    transition: all ease-in-out .3s;
+    z-index: 1;
+}
+
+.rightBox {
+    display: flex;
+    gap: 1rem;
+    height: 90%;
+    width: 45%;
+    min-width: 50rem;
+    max-width: 50rem;
+    min-height: 45rem;
+    max-height: 45rem;
+    border-radius: 1rem;
+    z-index: 1;
+    flex-direction: column;
+    flex-shrink: none;
+}
+
+/* Box Main Containers */
+
+.box1 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+    height: 78vh;
+    width: 100%;
+    box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out .3s;
+}
+
+
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+    z-index: 1;
+    height: 50vh;
+    width: 100%;
+    box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+}
+
+.box3 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 1rem;
+    z-index: 1;
+    height: 50vh;
+    width: 100%;
+    box-shadow: -30px 50px 30px rgba(0, 0, 0, 0.280);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    border-radius: .7rem;
+    -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out .3s;
+    overflow: hidden;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover {
+    transition: all ease-in-out .3s;
+    transform: scale(1.01, 1);
+}
+
+
+
+.Self2 {
+    display: flex;
+    align-self: center;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 5px solid rgb(252, 252, 252);
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+.Self2 img {
+    display: flex;
+    justify-self: center;
+    height: 20rem;
+    width: 20rem;
+    background-size: cover;
+    z-index: 3;
+}
+
+.bgImg {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+}
+
+.aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+.aboutMeContainerSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    padding: 2rem;
+
+}
+
+.subContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.subContainer2 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.subContainer p {
+    padding-left: 1rem;
+}
+
+.aboutMeTitle {
+    margin: 3.5rem;
+}
+
+.aboutMeTitle h1 {
+    color: rgba(0, 0, 0, .8);
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutMeTitle p {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bar {
+    position: relative;
+    width: 20rem;
+    height: 2px;
+    background: #ffffff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+}
+
+.bar2 {
+    position: relative;
+    width: 45rem;
+    height: 2px;
+    background: #ffffff;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 1);
+}
+
+/* Skills */
+
+.skillCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.skillTitle h1 {
+    display: flex;
+    margin: 2rem 0 0 2rem;
+    flex-direction: column;
+    color: rgba(0, 0, 0, .8);
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skillTitle p {
+    margin-left: 2rem;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.cardSub {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    height: 5rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: all 120ms;
+    overflow: hidden;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+}
+
+.cardSub:hover {
+    transform: scale(1.5);
+}
+
+
+@keyframes skillAnimation {
+    from {
+        top: 48%;
+    }
+
+    to {
+        top: 52%;
+    }
+}
+
+.cardSub:hover .Icon {
+    width: 220px;
+    height: auto;
+    animation: none;
+    transform: rotate(15deg) translate(-35%, -25%);
+}
+
+.skillText {
+    position: absolute;
+    rotate: -60deg;
+    top: -1000%;
+    left: 0%;
+    color: #000000;
+    transition: all .5s ease-in;
+}
+
+.Icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+    filter: drop-shadow(3px 3px 5px #18181815);
+    transform: translate(-50%, -50%);
+    animation: skillAnimation 1s ease infinite alternate;
+    transition: all .5s ease-in;
+}
+
+.skillText p {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cardSub:hover .skillText {
+    top: 40%;
+    left: 0%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, .5);
+    padding: .2rem;
+}
+
+
+.line {
+    width: 400px;
+    height: 2px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+    animation: rotBGimg 2s ease-in-out infinite alternate-reverse;
+
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: translateX(10px) scale(1.1);
+    }
+}
+
+
+/* Attributes */
+
+.attributeSkill {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.attributeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+}
+
+.attributeCard:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+
+.attributeCardTitle {
+    color: #fff;
+    position: absolute;
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.attributeCard:hover .attributeCardTitle {
+    transform: translateZ(50px);
+}
+
+/* Background Bubbles */
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgba(255, 0, 0, 0.1), rgb(250, 235, 215));
+    border-radius: 50%;
+    position: absolute;
+    animation: 4s ease-in-out infinite alternate-reverse;
+    z-index: 1;
+}
+
+.circle:nth-child(1) {
+    top: 200px;
+    left: 100px;
+    animation-name: move1;
+}
+
+.circle:nth-child(2) {
+    top: 500px;
+    right: 200px;
+    animation-name: move2;
+}
+
+.circle:nth-child(3) {
+    bottom: 200px;
+    left: 200px;
+    animation-name: move3;
+}
+
+.circle:nth-child(4) {
+    bottom: 300px;
+    left: 800px;
+    animation-name: move1;
+}
+
+.circle:nth-child(5) {
+    top: 200px;
+    right: 100px;
+    animation-name: move1;
+}
+
+@keyframes move1 {
+    to {
+        transform: translateY(100px) translateX(-100px) scale(1.5);
+    }
+}
+
+@keyframes move2 {
+    to {
+        transform: translateY(-80px) translateX(80px) scale(2.5);
+
+    }
+}
+
+@keyframes move3 {
+    to {
+        transform: scale(2) translateX(40px);
+
+    }
+}
