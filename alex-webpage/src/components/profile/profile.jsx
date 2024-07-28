@@ -1,6 +1,7 @@
 import React from 'react'
 import Nav from '../nav/nav'
 import './profile.css'
+import ProfileAnimation from './animation/profileAnimation'
 
 export default function Profile() {
 
@@ -25,8 +26,11 @@ export default function Profile() {
 
         <div className='bg-white w-[70%] h-[1px] rounded-lg mt-10 '></div>
 
-        <div className='flex flex-col justify-center h-[200px]'>
-          <div className='flex justify-center w-[700px] overflow-hidden h-[200px] text-black'>
+        <div className='flex flex-col justify-center gap-5'>
+
+          <div className='flex justify-center text-9xl zeyada-regular text-white'>Skills </div>
+
+          <div className='flex justify-center w-[700px] overflow-hidden  text-black '>
             <div className='flex justify-center w-full text-white gap-10 slide'>
               <p>HTML</p>
               <p>|</p>
@@ -53,7 +57,7 @@ export default function Profile() {
               <p>Tailwind</p>
             </div>
           </div>
-          <div className='flex justify-center w-[700px] overflow-hidden h-[200px] text-black'>
+          <div className='flex justify-center w-[700px] overflow-hidden text-black'>
             <div className='flex justify-center w-full text-white gap-10 slideReverse'>
               <p>Python</p>
               <p>|</p>
@@ -76,6 +80,10 @@ export default function Profile() {
               <p>Node.js</p>
             </div>
           </div>
+        </div>
+
+        <div>
+          <ProfileAnimation />
         </div>
 
       </div>
