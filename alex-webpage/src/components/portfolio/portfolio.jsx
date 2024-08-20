@@ -15,22 +15,18 @@ export default function Portfolio() {
 
 
     <div className='flex flex-col justify-center items-center gap-10 bg-black'>
-      <Nav />
-
-      <div>
-        <h1 className='text-5xl text-white'>
-          Websites
-        </h1>
+      <div className='absolute top-0'>
+        <Nav />
       </div>
-
-      <Carousel autoplay={true} loop={true} className="rounded-xl">
+      
+      <Carousel autoplay={true} loop={true} transition={ {type: "spring", duration: 1 }} className="rounded-xl">
         <div className="relative h-full w-full">
           <img
             src={Spotify}
             alt="Spotify Clone"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/85">
             <div className="w-3/4 text-center md:w-2/4">
               <Typography
                 variant="h1"
@@ -42,7 +38,7 @@ export default function Portfolio() {
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-90"
               >
                 I have a passion for music, for it's a part of my daily existence.
                 From the moment I wake up, during my work hours, moments of relaxation, and even when I'm out and about, Spotify accompanies me, serving as the soundtrack to my diverse moods and experiences.
@@ -73,7 +69,7 @@ export default function Portfolio() {
             alt="CourtCheck"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/85">
             <div className="w-3/4 text-center md:w-2/4">
               <Typography
                 variant="h1"
@@ -85,7 +81,7 @@ export default function Portfolio() {
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-90"
               >
                 Developed a website for an App-Based Startup company as their lead Web-Developer.
                 This app is all about helping basketball enthusiasts locate courts and connect with other players for pickup games and tournaments.
@@ -111,7 +107,7 @@ export default function Portfolio() {
             alt="2AM"
             className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
+          <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/85">
             <div className="w-3/4 text-center md:w-2/4">
               <Typography
                 variant="h1"
@@ -123,7 +119,7 @@ export default function Portfolio() {
               <Typography
                 variant="lead"
                 color="white"
-                className="mb-12 opacity-80"
+                className="mb-12 opacity-90"
               >
                 My first major project, an eCommerce website featuring video reviews and live chat functionality—a venture that also represented my introduction to collaborative group projects.
               </Typography>
