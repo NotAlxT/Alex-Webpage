@@ -6,16 +6,16 @@ import House from "../../imgs/House.jpg";
 
 export default function Profile() {
   return (
-    <div className="flex justify-center items-center w-full h-full bg-black ">
+    <div className="flex justify-center items-center w-full h-full bg-black pb-10">
       
       <div className="flex flex-col w-[95%] justify-center items-center gap-10">
         {/*naviation */}
         <Nav />
 
-        <div className="flex justify-center items-center w-full h-[70vh] flex-col gap-5">
-          <div className="text-white text-9xl ">Profile</div>
+        <div className="flex justify-center items-center w-full h-[70vh] flex-col gap-10">
+          <div className="text-white text-9xl z-20">Profile</div>
           {/*Picture animator*/}
-          <div className="relative flex ">
+          <div className="relative flex scale-[1.5] z-10">
             <div className="loader"></div>
             <div className="loader"></div>
             <div className="loader"></div>
@@ -142,7 +142,7 @@ export default function Profile() {
 
               <div className="flex flex-col w-[70%] gap-5">
                 <div className="flex justify-center text-2xl text-white">
-                  Experiance
+                Experience
                 </div>
 
                 {/*Line divider horizontal*/}
@@ -215,7 +215,7 @@ export default function Profile() {
 
               <div className="flex flex-col w-[70%] gap-5">
                 <div className="flex justify-center text-2xl text-black">
-                  Experiance
+                Experience
                 </div>
 
                 {/*Line divider horizontal*/}

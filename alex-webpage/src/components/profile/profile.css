@@ -8,7 +8,7 @@
     margin-left: -80px;
     margin-top: -50px;
     border-radius: 5px;
-    background: #ffffff;
+    background: #333333;
     animation: dot1_ 4s cubic-bezier(0.55,0.1,0.2,0.99) infinite;
   }
   
