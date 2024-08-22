@@ -198,3 +198,7 @@
   .slideReverse {
     animation: slide 5s alternate-reverse linear infinite;
   }
+
+  .bg-radial-gradient{
+    background: radial-gradient(rgb(10, 10, 10) 40%,rgb(14, 14, 14) 40%,black 45%);
+  }
