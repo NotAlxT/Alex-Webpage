@@ -14,12 +14,12 @@ export default function Portfolio() {
 
 
 
-    <div className='flex flex-col justify-center items-center gap-10 bg-black'>
+    <div className='flex flex-col justify-center items-center gap-10 bg-black bg-cover h-[100vh] w-full'>
       <div className='absolute top-0'>
         <Nav />
       </div>
       
-      <Carousel autoplay={true} loop={true} transition={ {type: "spring", duration: 1 }} className="rounded-xl">
+      <Carousel autoplay={true} loop={true} transition={ {type: "spring", duration: .1 }} className="rounded-xl">
         <div className="relative h-full w-full">
           <img
             src={Spotify}

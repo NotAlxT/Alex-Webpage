@@ -48,7 +48,7 @@ export default function Home() {
                     <a href="https://www.tiktok.com/@not_alxt" target='blank'><div className='hover:bg-[rgb(255,255,255)] rounded-lg h-9 w-9 flex justify-center items-center transition-all ease-in-out duration-300' ><Icon icon="mage:tiktok-circle" width="2rem" height="2rem" /></div></a>
                 </div>
                 <div className='flex flex-row text-[rgb(146,146,146)] gap-2'>
-                    <h1>Boston</h1>
+                    <h1>Houston</h1>
                     <h1>|</h1>
                     <h1>857.271.8817 </h1>
                     <h1>|</h1>

@@ -1,11 +1,14 @@
 import React from "react";
 import Nav from "../nav/nav";
 import "./profile.css";
-import CodingBG from "../../imgs/Coding2.jpg";
+import CodingBG from "../../imgs/Coding2.jpeg";
 import House from "../../imgs/House.jpg";
 import ParticlesComponent from "./animation";
 
+
+
 export default function Profile() {
+  
 
   return (
     <div className="flex justify-center items-center w-full h-full pb-10 ">
@@ -22,7 +25,7 @@ export default function Profile() {
           <div>
 
           </div>
-          <div className="text-white text-9xl z-20 ">Profile</div>
+          <div className="bg-gradient-to-r from-gray-100/30 via-white to-gray-100/30 bg-clip-text text-transparent text-9xl z-20 animate-[bounce_1.31s_ease-out_infinite]">Profile</div>
           {/*Picture animator*/}
           <div className="relative flex scale-[1.5] z-10">
             <div className="loader"></div>
@@ -33,12 +36,12 @@ export default function Profile() {
         {/*Line divider horizontal*/}
         <div className="bg-[rgba(159,159,159,0.5)] w-[70%] h-[1px] rounded-lg mt-10 z-10"></div>
         {/*Content */}
-        <div className="  w-full h-full flex flex-row justify-center items-center gap-5 p-5 rounded">
+        <div className="w-full h-full flex flex-row justify-center items-center gap-5 p-5 rounded ">
           {/* Left Content*/}
-          <div className="flex w-[60%]">
+          <div className="flex w-[60%] ">
             <div>
               <img
-                className="object-cover h-full w-full rounded"
+                className="object-cover h-full w-full rounded-full "
                 src={CodingBG}
                 alt="Coding Background"
               />
@@ -48,14 +51,16 @@ export default function Profile() {
           <div className="flex h-full w-[.5px] bg-[rgb(58,58,58)]"> </div>
 
           {/* Right Content */}
-          <div className="flex flex-col justify-center w-[40%] gap-5">
+          <div className="flex flex-col justify-center w-[40%] gap-5 backdrop-blur-sm rounded-3xl ">
             <div className="flex flex-col w-full items-center gap-5">
               <div className="flex flex-col w-[70%]">
                 <h1 className="text-white text-4xl">Full-Stack Developer</h1>
-                <h1 className="flex text-[rgba(255,255,255,0.5)] text-3xl">
+               {/*} <h1 className="flex text-[rgba(255,255,255,0.5)] text-3xl">
                   About Me
-                </h1>
+                </h1> */}
               </div>
+
+              <br />
 
               <div className="flex text-2xl justify-start text-white">
                 <h1>Skills/Tech</h1>
@@ -65,10 +70,10 @@ export default function Profile() {
               <div className="flex w-[70%] h-[.5px] bg-[rgb(58,58,58)]"> </div>
 
               {/* Skill Carousel Upper */}
-              <div className="flex justify-center w-[70%] overflow-hidden ">
-                <div className="flex justify-center w-full text-[rgba(255,255,255,0.5)] gap-10 slide">
+              <div className="flex justify-center w-[70%] overflow-hidden">
+                <div className="flex justify-center w-full text-[rgba(255,255,255,0.5)] gap-10 slide ">
                   <p>HTML</p>
-                  <p>|</p>
+                  <p> |</p>
                   <p>CSS</p>
                   <p>|</p>
                   <p>JavaScript</p>
@@ -161,7 +166,7 @@ export default function Profile() {
                   <div className="flex text-xl text-white">CourtCheck</div>
                   <div className="flex text-[rgba(255,255,255,0.5)] justify-between">
                     <p>Front-End Engineer</p>
-                    <p>Dec, 2023 - Present</p>
+                    <p>Dec, 2023 - Feb, 2024</p>
                   </div>
                 </div>
               </div>
@@ -176,15 +181,15 @@ export default function Profile() {
         <div className="w-full h-full flex flex-row justify-center items-center gap-5 p-5 rounded">
 
           {/* Left Content */}
-          <div className="flex flex-col justify-center w-[40%] gap-5">
+          <div className="flex flex-col justify-center w-[40%] gap-5 backdrop-blur-sm rounded-3xl">
             <div className="flex flex-col w-full items-center gap-5">
               <div className="flex flex-col w-[70%]">
                 <h1 className="text-white text-4xl">Real Estate Developer</h1>
-                <h1 className="flex text-[rgba(255,255,255,0.5)] text-3xl">
+               {/* <h1 className="flex text-[rgba(255,255,255,0.5)] text-3xl">
                   About Me
-                </h1>
+                </h1> */}
               </div>
-
+<br />
               <div className="flex text-2xl justify-start text-white">
                 <h1>Properties</h1>
               </div>
@@ -254,10 +259,10 @@ export default function Profile() {
           <div className="flex h-full w-[.5px] bg-[rgb(58,58,58)]"> </div>
 
           {/* Right Content*/}
-          <div className="flex w-[60%]">
+          <div className="flex w-[60%] ">
             <div>
               <img
-                className="object-cover h-full w-full rounded"
+                className="object-cover h-full w-full rounded-full"
                 src={House}
                 alt="House Background"
               />

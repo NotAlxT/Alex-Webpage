@@ -16,13 +16,13 @@ function App() {
         <Route path="/" element={<> <Home /></>}> </Route>
         <Route path="/profile" element={<> <Profile /></>}> </ Route>
         <Route path="/portfolio" element={<>  <Portfolio /></>}> </ Route>
-        <Route path="/projects" element={<> <Projects /> </>}> </ Route>
+        {/*<Route path="/projects" element={<> <Projects /> </>}> </ Route>
         <Route path="/calculator" element={<>  <Calculator /> </>}> </ Route>
         <Route path="/timer" element={<> <ClockTimer /> </>}> </ Route>
-        <Route path="/todoList" element={<>  <TodoList /> </>}> </ Route>
+        <Route path="/todoList" element={<>  <TodoList /> </>}> </ Route> */}
       </Routes>
     </Router>
   );
 }
-
+//
 export default App;

@@ -22,6 +22,7 @@ export default function ParticlesComponent(){
       setInit(true);
     });
   }, []);
+  
 
   const particlesLoaded = (container) => {
     console.log(container);
@@ -34,7 +35,7 @@ export default function ParticlesComponent(){
           value: "000000",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 300,
       interactivity: {
         events: {
           onClick: {
@@ -81,7 +82,7 @@ export default function ParticlesComponent(){
           density: {
             enable: true,
           },
-          value: 80,
+          value: 100,
         },
         opacity: {
           value: 0.5,
@@ -100,11 +101,13 @@ export default function ParticlesComponent(){
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-      />
+      
+        <Particles
+          id="tsparticles"
+          particlesLoaded={particlesLoaded}
+          options={options}
+        />
+
     );
   }
 
