@@ -18,7 +18,7 @@ export default function Home() {
             <Nav />
             <div className='flex flex-col justify-center items-center mt-[10%]'>
                 <div className='flex flex-col justify-center items-center'>
-                    <h4 className='text-[rgb(249,211,200)] m-10 '>Hello 👋, I'm </h4>
+                    <h4 className='text-[rgb(249,211,200)] m-10 '>Hello👋, I'm </h4>
                     <div className='bg-[rgb(249,211,200)] w-[150px] h-[1px] rounded-3xl'></div>
                     <div className="btn-shine "> Alex Tran </div>
                     <div className='bg-[rgb(249,211,200)] w-[150px] h-[1px] rounded-3xl'></div>
