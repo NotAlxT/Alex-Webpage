@@ -4,10 +4,10 @@ import Home from './components/home/home';
 import './App.css';
 import Profile from './components/profile/profile';
 import Portfolio from './components/portfolio/portfolio';
-import Projects from './components/projects/projects'
-import Calculator from './components/projects/calculator/calculator';
-import ClockTimer from './components/projects/timer/timer';
-import TodoList from './components/projects/todoList/todoList';
+//import Projects from './components/projects/projects'
+//import Calculator from './components/projects/calculator/calculator';
+//import ClockTimer from './components/projects/timer/timer';
+//import TodoList from './components/projects/todoList/todoList';
 
 function App() {
   return (
