@@ -41,7 +41,7 @@ export default function Profile() {
           <div className="flex w-[60%] ">
             <div>
               <img
-                className="object-cover h-full w-full rounded-full "
+                className="object-cover h-full w-full rounded-full brightness-[1.85]"
                 src={CodingBG}
                 alt="Coding Background"
               />
